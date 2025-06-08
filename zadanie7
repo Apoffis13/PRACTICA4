@@ -1,0 +1,11 @@
+7) Проверка бьет ли ферзь фигуру
+function canQueenCapture(queen, figure) {
+  return queen.row === figure.row || 
+         queen.col === figure.col || 
+         Math.abs(queen.row - figure.row) === Math.abs(queen.col - figure.col);
+}
+
+// Пример использования:
+const queen = { row: 4, col: 4 };
+const figure = { row: 4, col: 6 };
+console.log(canQueenCapture(queen, figure)); // true
