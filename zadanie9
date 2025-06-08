@@ -1,0 +1,23 @@
+9) Статус читателей
+function displayReadersStatus(readers) {
+  readers.forEach(reader => {
+    console.log(`Читатель: ${reader.name}`);
+    console.log(`Книга: "${reader.book.title}" (${reader.book.author})`);
+    console.log(`Статус: ${reader.status}\n`);
+  });
+}
+
+// Пример использования:
+const readers = [
+  {
+    name: "Иван Иванов",
+    book: { title: "JavaScript: The Good Parts", author: "Douglas Crockford" },
+    status: "читает"
+  },
+  {
+    name: "Петр Петров",
+    book: { title: "Clean Code", author: "Robert Martin" },
+    status: "вернул"
+  }
+];
+displayReadersStatus(readers);
