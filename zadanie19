@@ -1,0 +1,14 @@
+19) День недели по номеру
+function getDayName(dayNumber) {
+  const days = [
+    "Воскресенье", "Понедельник", "Вторник", "Среда",
+    "Четверг", "Пятница", "Суббота"
+  ];
+  
+  return dayNumber >= 1 && dayNumber <= 7 
+    ? days[dayNumber - 1] 
+    : "Ошибка: введите число от 1 до 7";
+}
+
+// Пример использования:
+console.log(getDayName(3)); // "Вторник"
