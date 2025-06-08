@@ -1,0 +1,12 @@
+1) Проверка високосного года с 31-дневным месяцем
+function isLeapYearWith31Days(yearObj) {
+  const year = yearObj.year;
+  const monthHas31Days = yearObj.monthDays === 31;
+  
+  const isLeap = (year % 400 === 0) || (year % 100 !== 0 && year % 4 === 0);
+  return isLeap && monthHas31Days;
+}
+
+// Пример использования:
+const yearObj = { year: 2024, monthDays: 31 };
+console.log(isLeapYearWith31Days(yearObj)); // true или false
