@@ -1,0 +1,9 @@
+2) Проверка бьет ли ладья фигуру
+function canRookCapture(rook, figure) {
+  return rook.row === figure.row || rook.col === figure.col;
+}
+
+// Пример использования:
+const rook = { row: 1, col: 1 };
+const figure = { row: 1, col: 5 };
+console.log(canRookCapture(rook, figure)); // true
