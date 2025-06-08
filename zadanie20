@@ -1,0 +1,8 @@
+20) Наименьшее числовое свойство
+function getMinNumericProperty(obj) {
+  const nums = Object.values(obj).filter(v => typeof v === 'number');
+  return Math.min(...nums);
+}
+
+// Пример использования:
+console.log(getMinNumericProperty({ a: 5, b: 2, c: 8 })); // 2
