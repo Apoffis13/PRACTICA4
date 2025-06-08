@@ -1,0 +1,8 @@
+5) Проверка первого символа строки
+function checkFirstChar(obj) {
+  return obj.str[0] === 'a' ? obj.flag : false;
+}
+
+// Пример использования:
+const obj = { str: 'abcde', flag: true };
+console.log(checkFirstChar(obj)); // true
