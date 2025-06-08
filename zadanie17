@@ -1,0 +1,12 @@
+17) Уникальные числовые свойства
+function getUniqueNumericProperties(obj) {
+  const values = Object.values(obj).filter(v => typeof v === 'number');
+  const uniqueValues = [...new Set(values)];
+  
+  return Object.fromEntries(
+    Object.entries(obj).filter(([_, v]) => uniqueValues.includes(v))
+  );
+}
+
+// Пример использования:
+console.log(getUniqueNumericProperties({ a: 1, b: 2, c: 2, d: 3 }));
