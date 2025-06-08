@@ -1,0 +1,12 @@
+21) Определение координатной четверти
+function getCoordinateQuarter(point) {
+  const { x, y } = point;
+  if (x > 0 && y > 0) return 'I четверть';
+  if (x < 0 && y > 0) return 'II четверть';
+  if (x < 0 && y < 0) return 'III четверть';
+  if (x > 0 && y < 0) return 'IV четверть';
+  return 'На оси';
+}
+
+// Пример использования:
+console.log(getCoordinateQuarter({ x: -2, y: 3 })); // II четверть
