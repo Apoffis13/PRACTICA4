@@ -1,0 +1,10 @@
+26) Преобразование в массив при color = blue
+function convertToArrayIfBlue(obj) {
+  if (obj.color === 'blue') {
+    return Object.entries(obj);
+  }
+  return obj;
+}
+
+// Пример использования:
+console.log(convertToArrayIfBlue({ color: 'blue', a: 1, b: 2 }));
