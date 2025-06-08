@@ -1,0 +1,20 @@
+13) Методы для описания городов
+const city1 = {
+  name: 'Москва',
+  population: 12655050,
+  describe() {
+    return `${this.name}, население: ${this.population}`;
+  }
+};
+
+const city2 = {
+  name: 'Санкт-Петербург',
+  population: 5392992,
+  describe() {
+    return `${this.name}, население: ${this.population}`;
+  }
+};
+
+// Пример использования:
+console.log(city1.describe());
+console.log(city2.describe());
