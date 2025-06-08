@@ -1,0 +1,15 @@
+6) Рандомный вывод свойств автомобиля
+function printRandomCarProperties(car) {
+  const properties = Object.keys(car);
+  const randomProp = properties[Math.floor(Math.random() * properties.length)];
+  console.log(`${randomProp}: ${car[randomProp]}`);
+}
+
+// Пример использования:
+const car = {
+  brand: 'Toyota',
+  model: 'Camry',
+  year: 2020,
+  color: 'silver'
+};
+printRandomCarProperties(car);
