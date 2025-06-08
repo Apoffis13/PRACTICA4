@@ -1,0 +1,11 @@
+15) Умножение числовых свойств и сравнение
+function multiplyAndCompare(obj, num) {
+  const product = Object.values(obj)
+    .filter(v => typeof v === 'number')
+    .reduce((acc, val) => acc * val, 1);
+  
+  return product === num;
+}
+
+// Пример использования:
+console.log(multiplyAndCompare({ a: 2, b: 3 }, 6)); // true
