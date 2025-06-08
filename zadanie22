@@ -1,0 +1,8 @@
+22) Наименьшее строковое свойство
+function getMinStringProperty(obj) {
+  const strings = Object.values(obj).filter(v => typeof v === 'string');
+  return strings.sort((a, b) => a.localeCompare(b))[0];
+}
+
+// Пример использования:
+console.log(getMinStringProperty({ a: 'z', b: 'a', c: 'm' })); // 'a'
