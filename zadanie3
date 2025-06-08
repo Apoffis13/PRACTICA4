@@ -1,0 +1,20 @@
+3) Фильтрация студентов по среднему баллу
+function filterStudents(students) {
+  const filtered = students.filter(student => student.gpa > 4.0);
+  
+  if (filtered.length === 0) {
+    console.log("Нет студентов со средним баллом больше 4.0");
+    return;
+  }
+  
+  filtered.forEach(student => {
+    console.log(`Фамилия: ${student.name}, Группа: ${student.group}`);
+  });
+}
+
+// Пример использования:
+const students = [
+  { name: "Иванов И.И.", group: "101", gpa: 4.5 },
+  { name: "Петров П.П.", group: "102", gpa: 3.9 }
+];
+filterStudents(students);
