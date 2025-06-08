@@ -1,0 +1,11 @@
+10) Сортировка массива объектов
+function sortObjects(arr, key) {
+  return arr.sort((a, b) => a[key] > b[key] ? 1 : -1);
+}
+
+// Пример использования:
+const users = [
+  { name: 'John', age: 25 },
+  { name: 'Alice', age: 20 }
+];
+console.log(sortObjects(users, 'age'));
