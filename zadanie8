@@ -1,0 +1,14 @@
+8) Создание массива объектов со случайными значениями
+function createRandomObjects(count) {
+  const objects = [];
+  for (let i = 0; i < count; i++) {
+    objects.push({
+      id: Math.floor(Math.random() * 1000),
+      value: Math.random() * 100
+    });
+  }
+  return objects;
+}
+
+// Пример использования:
+console.log(createRandomObjects(3));
