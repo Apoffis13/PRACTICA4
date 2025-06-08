@@ -1,0 +1,7 @@
+11) Преобразование объекта в массив пар [key, value]
+function objectToKeyValuePairs(obj) {
+  return Object.entries(obj);
+}
+
+// Пример использования:
+console.log(objectToKeyValuePairs({ a: 1, b: 2 }));
