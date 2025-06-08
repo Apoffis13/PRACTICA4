@@ -1,0 +1,7 @@
+12) Проверка наличия свойств в объекте
+function hasProperties(obj, props) {
+  return props.every(prop => obj.hasOwnProperty(prop));
+}
+
+// Пример использования:
+console.log(hasProperties({ a: 1, b: 2 }, ['a', 'b'])); // true
