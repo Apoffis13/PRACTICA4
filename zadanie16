@@ -1,0 +1,9 @@
+16) Подсчет гласных и согласных
+function countLetters(str) {
+  const vowels = str.match(/[аеёиоуыэюяaeiou]/gi)?.length || 0;
+  const consonants = str.match(/[бвгджзйклмнпрстфхцчшщbcdfghjklmnpqrstvwxyz]/gi)?.length || 0;
+  return { vowels, consonants };
+}
+
+// Пример использования:
+console.log(countLetters("Привет мир")); // { vowels: 3, consonants: 6 }
