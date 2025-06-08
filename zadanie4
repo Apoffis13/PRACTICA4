@@ -1,0 +1,9 @@
+4) Проверка бьет ли слон фигуру
+function canBishopCapture(bishop, figure) {
+  return Math.abs(bishop.row - figure.row) === Math.abs(bishop.col - figure.col);
+}
+
+// Пример использования:
+const bishop = { row: 3, col: 3 };
+const figure = { row: 1, col: 1 };
+console.log(canBishopCapture(bishop, figure)); // true
