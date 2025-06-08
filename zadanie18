@@ -1,0 +1,8 @@
+18) Жарка котлет
+function calculateCookingTime(k, m, n) {
+  if (n <= k) return 2 * m;
+  return Math.ceil((2 * n) / k) * m;
+}
+
+// Пример использования:
+console.log(calculateCookingTime(2, 1, 3)); // 3
